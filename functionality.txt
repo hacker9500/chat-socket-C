@@ -1,0 +1,11 @@
+Consider a Banking organization that provides a live chat facility as a customer care
+service.
+For simplicity, let’s assume that we have a single customer care representative at a time
+who is handling simultaneous queries from multiple clients and replying over the chat.
+Design such a chat application over connection­oriented protocol.
+So multiple clients can connect to the representative/server and exchange messages
+with it. The server may receive all messages over a single window but a reply from the
+server must reach the respective client only, depending on order of message(query)
+arrival. Example, if client 1’s query/message came first and before server could reply it
+has another query from client 2. So first reply from server corresponds to client 1 and
+the second reply from server corresponds to client 2.
